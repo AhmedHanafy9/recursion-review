@@ -6,6 +6,7 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className) {
   var results = [];
+
   var elements = document.body;
 
   var findClass = function(elements) {
@@ -21,8 +22,7 @@ var getElementsByClassName = function(className) {
     return elements;
   };
 
-  if (elements.childNodes) {
-    findClass(elements);
-  }
+  findClass(elements);
+
   return results;
 };
