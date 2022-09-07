@@ -19,10 +19,12 @@ var getElementsByClassName = function(className) {
     _.each(elements.childNodes, function(item) {
       findClass(item);
     });
-    return elements;
   };
 
   findClass(elements);
 
   return results;
 };
+
+
+
